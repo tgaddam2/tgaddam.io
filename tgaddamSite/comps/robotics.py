@@ -84,6 +84,17 @@ def roboticsInfo():
                     ),
                     width=["95%", "95%", "90%", "50%"],
                 ),
+                pc.unordered_list(
+                    pc.list_item("2022 Rapid React"),
+                    pc.unordered_list(
+                        pc.list_item("Rocket City Regional Engineering Inspiration Award"),
+                        pc.list_item("Worlds Roebling Division"),
+                        padding_left=f"{2.5}%",
+                        font_weight = "none",
+                    ),
+                    padding_left=f"{2.5}%",
+                    color="#B0B0B0",
+                ),
                 pc.box(
                     pc.heading(
                         "FRC 1902 - Exploding Bacon",
@@ -100,6 +111,16 @@ def roboticsInfo():
                         ),
                     ),
                     width=["95%", "95%", "90%", "50%"],
+                ),
+                pc.unordered_list(
+                    pc.list_item("2023 Charge Up"),
+                    pc.unordered_list(                                    
+                        pc.list_item("In Season"),
+                        padding_left=f"{2.5}%",
+                        font_weight = "none",
+                    ),
+                    padding_left=f"{2.5}%",
+                    color="#B0B0B0",
                 ),
             ),
         ),
