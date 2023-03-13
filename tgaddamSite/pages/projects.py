@@ -5,7 +5,7 @@
 
 # from comps.topNavbar import TopNavbar
 # from comps.botNavbar import BotNavbar
-# from comps.constants import *
+# from styles import *
 
 # route = "projects"
 
@@ -44,7 +44,7 @@ sys.path.append("Pynecone/")
 
 from comps.topNavbar import TopNavbar
 from comps.botNavbar import BotNavbar
-from comps.constants import *
+from styles import *
 
 route = "projects"
 title = "Projects"
@@ -60,7 +60,7 @@ def page():
                 pc.heading(
                     "Projects",
                     padding="35px",
-                    style=heading,
+                    style=h1Color,
                 ),
             ),
             pc.spacer(),

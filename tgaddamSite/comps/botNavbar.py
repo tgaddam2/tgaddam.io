@@ -6,7 +6,7 @@ def BotNavbar():
         pc.center(
             pc.link( # navigate to gihub
                 pc.image(
-                    src="discordcl.ico",
+                    src="discord.ico",
                     width="30px",
                     height="auto",),
                 href="https://discordapp.com/users/460131360603111424",

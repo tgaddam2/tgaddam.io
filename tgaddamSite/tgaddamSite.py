@@ -1,16 +1,18 @@
 from pcconfig import config
-import sys
+import pynecone as pc
 
+import sys
 sys.path.append("tgaddamSite/")
 
 from comps import state
-from pages import welcome, projects, about
-import pynecone as pc
+from styles import *
+from pages import welcome, projects, about, education
 
 # Add state and page to the app.
-app = pc.App(state=state.State)
+app = pc.App(state=state.State,
+             style=baseStyle)
 
-pages = [welcome, projects, about]
+pages = [welcome, projects, about, education]
 
 for page in pages:
     app.add_page(

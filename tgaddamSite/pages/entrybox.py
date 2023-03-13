@@ -6,7 +6,7 @@ sys.path.append("Pynecone/")
 from comps.state import State
 from comps.topNavbar import TopNavbar
 from comps.botNavbar import BotNavbar
-from comps.constants import *
+from styles import *
 
 class entryState(State):
     textStr: str = "hello"

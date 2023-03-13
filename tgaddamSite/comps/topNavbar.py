@@ -1,7 +1,11 @@
 import pynecone as pc
 
+import sys
+
+sys.path.append("Pynecone/")
+
 from .state import State
-from .constants import *
+from styles import *
 
 def TopNavbar():
     return pc.hstack(        
@@ -16,7 +20,7 @@ def TopNavbar():
                     "tgaddam",
                     color_scheme="white",
                     # width="5em",
-                    font_size="175%",
+                    # font_size="175%",
                     style=navbar
                 ),
             ),
@@ -29,7 +33,7 @@ def TopNavbar():
                         "Projects",
                         color_scheme="white",
                         # width="4em",
-                        font_size="175%",
+                        # font_size="175%",
                         style=navbar,
                     ),
                 href="projects",
@@ -39,11 +43,22 @@ def TopNavbar():
                 pc.button(
                         "About",
                         color_scheme="white",
-                        font_size="175%",
+                        # font_size="175%",
                         # width="5em",
                         style=navbar,
                     ),
                 href="about",
+                button=True,
+            ),
+            pc.link( # navigate to about page
+                pc.button(
+                        "Education",
+                        color_scheme="white",
+                        # font_size="175%",
+                        # width="5em",
+                        style=navbar,
+                    ),
+                href="education",
                 button=True,
             ),
             pc.link( # navigate to gihub
@@ -60,4 +75,5 @@ def TopNavbar():
         top="0px",
         position="sticky",
         backdrop_filter="blur(4px)",
+        z_index="99",
     )
