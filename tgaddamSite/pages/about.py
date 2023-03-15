@@ -21,6 +21,7 @@ def page():
         pc.box(
             pc.vstack(
                 TopNavbar(),
+                pc.spacer(padding=f"{startPad}"),
                 # about me
                 pc.box(
                     pc.heading(
@@ -62,6 +63,7 @@ def page():
                                 pc.list_item("Coding"),
                                 pc.unordered_list(
                                     pc.list_item("Python"),
+                                    pc.list_item("Java"),
                                     padding_left=f"{2.5}%",
                                 ),
                                 padding_left=f"{2.5}%",

@@ -7,6 +7,9 @@ from comps.topNavbar import TopNavbar
 from comps.botNavbar import BotNavbar
 from styles import *
 
+route = "hello"
+title = "Hello"
+
 def page():
     return pc.box(
         pc.vstack(

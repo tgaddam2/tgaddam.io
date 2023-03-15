@@ -8,6 +8,9 @@ from comps.topNavbar import TopNavbar
 from comps.botNavbar import BotNavbar
 from styles import *
 
+route = "entrybox"
+title = "Entry box"
+
 class entryState(State):
     textStr: str = "hello"
 

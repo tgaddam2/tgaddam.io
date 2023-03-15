@@ -1,5 +1,7 @@
 import pynecone as pc
 
+startPad = "10px"
+
 baseStyle = {
     "::selection": {
         "backgroundImage":"linear-gradient(to top, #1d3c42, #1e2d37, #1e1e26, #161216, #000000)",

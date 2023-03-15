@@ -7,6 +7,19 @@ sys.path.append("Pynecone/")
 from .state import State
 from styles import *
 
+def buttonLink(text, href):
+    return pc.link(
+        pc.button(
+                f"{text}",
+                color_scheme="white",
+                # font_size="175%",
+                # width="5em",
+                style=navbar,
+            ),
+        href=f"{href}",
+        button=True,
+    )
+
 def TopNavbar():
     return pc.hstack(        
         pc.link( # navigate home
@@ -27,40 +40,11 @@ def TopNavbar():
             href="/",
         ),
         pc.spacer(),
-        pc.hstack(
-            pc.link( # navigate to projects page
-                pc.button(
-                        "Projects",
-                        color_scheme="white",
-                        # width="4em",
-                        # font_size="175%",
-                        style=navbar,
-                    ),
-                href="projects",
-                button=True,
-            ),
-            pc.link( # navigate to about page
-                pc.button(
-                        "About",
-                        color_scheme="white",
-                        # font_size="175%",
-                        # width="5em",
-                        style=navbar,
-                    ),
-                href="about",
-                button=True,
-            ),
-            pc.link( # navigate to about page
-                pc.button(
-                        "Education",
-                        color_scheme="white",
-                        # font_size="175%",
-                        # width="5em",
-                        style=navbar,
-                    ),
-                href="education",
-                button=True,
-            ),
+        pc.hstack(            
+            buttonLink("Projects", "projects"),
+            buttonLink("Education", "education"),
+            buttonLink("About", "about"),
+            buttonLink("Contact Me", "contact"),
             pc.link( # navigate to gihub
                 pc.image(
                         src="github-white.ico",

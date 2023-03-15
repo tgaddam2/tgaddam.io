@@ -15,13 +15,12 @@ title = "Education"
 
 archeryText = """I shoot compeition recurve, and have been doing it for 3 years now"""
 
-offset = 23
-
 def page():
     return pc.box(
         pc.box(
             pc.vstack(
                 TopNavbar(),
+                pc.spacer(padding=f"{startPad}"),
                 pc.heading(
                     "Education",
                     font_size="400%",
@@ -45,17 +44,17 @@ def page():
                     ),
                 ),   
                 pc.spacer(padding="0.1%"),
-                pc.box(
-                    pc.center(
-                        pc.markdown("""<span style="color: #B0B0B0;">**Archery**</span>"""),
-                    ),
-                    pc.center(
-                        pc.markdown("""<span style="color: #B0B0B0;">**FIRST Robotics**</span>"""),
-                    ),
-                    width=["80%", "90%", "90%", "50%"],
-                ),
-                pc.spacer(padding="10px",),
-                pc.divider(color="#B0B0B0"),
+                # pc.box(
+                #     pc.center(
+                #         pc.markdown("""<span style="color: #B0B0B0;">**Archery**</span>"""),
+                #     ),
+                #     pc.center(
+                #         pc.markdown("""<span style="color: #B0B0B0;">**FIRST Robotics**</span>"""),
+                #     ),
+                #     width=["80%", "90%", "90%", "50%"],
+                # ),
+                # pc.spacer(padding="10px",),
+                # pc.divider(color="#B0B0B0"),
                 pc.box(
                     pc.heading(
                         "Archery",
