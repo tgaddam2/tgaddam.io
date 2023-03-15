@@ -6,14 +6,14 @@ sys.path.append("tgaddamSite/")
 
 from comps import state
 from styles import *
-from pages import welcome, projects, about, education, contact
+from pages import welcome, projects, about, education
 from pages import hello, entrybox
 
 # Add state and page to the app.
 app = pc.App(state=state.State,
              style=baseStyle)
 
-pages = [hello, entrybox, welcome, projects, about, education, contact]
+pages = [hello, entrybox, welcome, projects, about, education]
 
 for page in pages:
     app.add_page(
