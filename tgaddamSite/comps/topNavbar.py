@@ -44,7 +44,6 @@ def TopNavbar():
             buttonLink("Projects", "projects"),
             buttonLink("Education", "education"),
             buttonLink("About", "about"),
-            buttonLink("Contact Me", "contact"),
             pc.link( # navigate to gihub
                 pc.image(
                         src="github-white.ico",
