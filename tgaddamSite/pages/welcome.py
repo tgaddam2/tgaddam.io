@@ -25,30 +25,31 @@ def page():
                 TopNavbar(),
                 pc.box(
                     pc.heading(
-                        "Welcome",
+                        "Welcome!",
                         font_size="600%",
                         style=h1Color,
                     ),
                 ),
                 pc.box(
                     pc.heading(
-                        "This is tgaddam's website, go and explore the place",
+                        # "This is tgaddam's website, go and explore the place",
+                        "This is my website",
                         font_size="200%",
                         color="#B0B0B0",
                     ),
                 ),
-                pc.spacer(),
-                pc.box(
-                    pc.text(
-                        pc.wrap(welcomeText),
-                        color="#B0B0B0",
-                    ),
-                    border_radius="15px",
-                    border_color="#BABABA",
-                    border_width="2px",
-                    padding=5,
-                    width="95%"
-                ),
+                # pc.spacer(),
+                # pc.box(
+                #     pc.text(
+                #         pc.wrap(welcomeText),
+                #         color="#B0B0B0",
+                #     ),
+                #     border_radius="15px",
+                #     border_color="#BABABA",
+                #     border_width="2px",
+                #     padding=5,
+                #     width="95%"
+                # ),
             ),
             height="95%",
         ),
